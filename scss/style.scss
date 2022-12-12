@@ -24,7 +24,7 @@ body {
 
 @for $i from 1 to 7 {
   .grid__item-img-#{$i} {
-    background-image: url("../img/#{$i}.jpg");
+    background-image: url("./../img/#{$i}.jpg");
   }
 }
 
