@@ -1,0 +1,129 @@
+// Quick reset
+body,
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+// Font
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+
+// Color
+$blue: #98e2f4;
+
+body {
+  overflow: hidden;
+  background-color: hwb(44 3% 91%);
+  user-select: none;
+}
+
+// Attributing a photo to each div
+
+@for $i from 1 to 7 {
+  .grid__item-img-#{$i} {
+    background-image: url("/img/#{$i}.jpg");
+  }
+}
+
+// The grid is stretched to be a bit bigger than its parent because we want to move the items
+
+.grid {
+  pointer-events: none;
+  position: absolute;
+  width: 110%;
+  height: 110%;
+  // top: -5%;
+  // left: -5%;
+  display: grid;
+  // the grid is divided by 50 times 2%
+  grid-template-columns: repeat(50, 2%);
+  grid-template-rows: repeat(50, 2%);
+}
+
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Permanent Marker", cursive;
+  color: hsl(68, 13%, 78%);
+
+  h1 {
+    font-size: 13vmin;
+  }
+  h2 {
+    position: relative;
+    left: -5vmin;
+    font-size: 4vmin;
+  }
+}
+
+// Cursor
+html {
+  cursor: none;
+}
+
+.cursor {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 8vmin;
+  aspect-ratio: 1;
+  background-color: transparent;
+  border: $blue 2px solid;
+  border-radius: 50%;
+  z-index: 1;
+  transition: width ease-in-out 0.5s, left ease-out 0.2s, top ease-out 0.2s;
+}
+
+.wider {
+  width: 20vmin;
+}
+
+// Grid
+
+.grid__item {
+  position: relative;
+
+  div {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: width 0.2s;
+    // background-position: left top
+    // background-position: 50% 50%;
+  }
+}
+
+// Individual positionning
+
+.pos-1 {
+  // grid-area : row start / column start / row end / column end
+  grid-area: 1/1/15/20;
+}
+
+.pos-2 {
+  grid-area: 4/24/22/38;
+}
+
+.pos-3 {
+  grid-area: 10/40/32/51;
+}
+
+.pos-4 {
+  grid-area: 18/2/35/11;
+}
+
+.pos-5 {
+  grid-area: 38/10/50/22;
+}
+
+.pos-6 {
+  grid-area: 34/26/47/48;
+}
