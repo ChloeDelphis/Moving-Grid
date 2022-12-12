@@ -17,18 +17,14 @@ Although the article recommended to use GSAP, I challenged myself to make everyt
 - Moving images according to cursor's position
 - Mouse follower and effects on mousedown + mouseup
 
+NB : This layout can only move on devices with a cursor
+
 ### Built with
 
 - Semantic HTML5 markup
 - SCSS proprocessor
 - Grid
 - JavaScript
-
-## Performance
-
-Images size is adapted according to user's device width
-
-NB : This layout can only move on devices with a cursor
 
 ## Author
 
