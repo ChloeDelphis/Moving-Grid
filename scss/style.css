@@ -12,13 +12,13 @@ body {
   overflow: hidden;
   background-color: hwb(44 3% 91%);
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .grid__item-img-1 {
-  background-image: url("/img/1.jpg");
+  background-image: url("../img/1.jpg");
 }
 
 .grid__item-img-2 {
@@ -124,4 +124,4 @@ html {
 
 .pos-6 {
   grid-area: 34/26/47/48;
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
