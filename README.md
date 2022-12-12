@@ -1,9 +1,8 @@
 # Moving layout
 
-## Links
+## Link
 
-- [Click here to see the code]()
-- [Click here to see the live site]()
+- [Click here to see the live site](https://chloedelphis.github.io/Moving-Grid/)
 
 ## My process
 
